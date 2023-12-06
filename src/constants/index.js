@@ -126,10 +126,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Nov 2021 - Nov 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Crafted interactive dashboards to effectively monitor employee data, statistics, and others.",
+      "Leveraged data-driven insights to analyze student data challenges, enabling informed decision-making.",
+      "Developed compelling data visualizations that conveyed complex information in a clear and easily understandable manner, catering to a wider audience.",
     ],
   },
   {
@@ -139,9 +138,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Mar 2022 - Aug 2022",
     points: [
-      "Craft product package recommendations that not only resolve stock-related challenges but also enhance sales performance.",
-      "Credit risk evaluation, classification, and data-driven insights for SME financial needs.",
-      "Segment customer data into useful categories for businesses.",
+      "Devised product package recommendations that not only mitigated stock-related issues but also boosted sales performance.",
+      "Conducted credit risk evaluation, classification, and data-driven analysis to assess the financial needs of SMEs.",
+      "Employed data segmentation techniques to categorize customer data into meaningful segments, empowering businesses with actionable insights.",
     ],
   },
   {
@@ -150,13 +149,13 @@ const experiences = [
       "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
     icon: bangkit,
     iconBg: "#383E56",
-    date: "Feb 2022 - Jul 2023",
+    date: "Feb 2022 - Jul 2022",
     points: [
-      "Building and deploying machine learning models that solve real-world problems.",
-      "As a data science team, collaborating with Cloud Computing, Mobile Developer, and mentor to define project requirements and develop efficient solutions.",
-      "Training and evaluating machine learning models on large datasets.",
-      "Monitoring and maintaining machine learning models in production.",
-      "Communicating complex technical concepts to non-technical audiences.",
+      "Designed and implemented machine learning models to tackle real-world problems and optimize decision-making.",
+      "Collaborated cross-functionally with Cloud Computing, Mobile Developer, and mentor teams to define project requirements and develop efficient solutions.",
+      "Trained and evaluated machine learning models on large-scale datasets, ensuring optimal performance and accuracy.",
+      "Monitored and maintained machine learning models in production, ensuring continuous effectiveness and adaptability.",
+      "Effectively communicated complex technical concepts to non-technical audiences, bridging the gap between technical expertise and business understanding.",
     ],
   },
   {
@@ -167,7 +166,8 @@ const experiences = [
     date: "Feb 2021 - Mar 2021",
     points: [
       "Processing news for online publication on the web or mobile apps.",
-      "create designs for several Instagram posts.",
+      "Curated and edited news content for online publication, ensuring accuracy, relevance, and engagement.",
+      "Created visually appealing and engaging designs for Instagram posts, contributing to enhanced brand presence and social media engagement.",
     ],
   },
 ];
