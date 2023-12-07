@@ -1,13 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCZ6ukO9X9EpXhl2LjhDy9JZpAe346IDbI",
-  authDomain: "react-project-6e568.firebaseapp.com",
-  projectId: "react-project-6e568",
-  storageBucket: "react-project-6e568.appspot.com",
-  messagingSenderId: "470042049569",
-  appId: "1:470042049569:web:3bc9f1164c94b4ae95f760",
+  apiKey: "AIzaSyC9jqpt6iw8Hjuc0qEb2zsw17endp0PNs8",
+  authDomain: "fir-react-9a098.firebaseapp.com",
+  projectId: "fir-react-9a098",
+  storageBucket: "fir-react-9a098.appspot.com",
+  messagingSenderId: "607881439334",
+  appId: "1:607881439334:web:782a1cf0da7115d4b1a5a7",
 };
 
 // Initialize Firebase
