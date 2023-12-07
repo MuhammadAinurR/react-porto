@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { Crud } from "../api/crud";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -68,6 +68,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const projects = Crud();
   return (
     <>
       <motion.div variants={textVariant()}>
