@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const isMobile = window.innerWidth <= 600;
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -25,7 +26,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {!isMobile ? (
+        <ComputersCanvas />
+      ) : (
+        <div className="text-center text-fuchsia-500 text-[50px] absolute xs:bottom-[350px]  w-full flex justify-center">
+          Swipe Down
+        </div>
+      )}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

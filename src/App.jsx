@@ -13,6 +13,7 @@ import {
 } from "./components";
 
 const App = () => {
+  const isMobile = window.innerWidth <= 600;
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -22,7 +23,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {!isMobile && <Tech />}
         <Works />
         <Feedbacks />
         <div className="relative z-0">
