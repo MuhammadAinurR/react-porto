@@ -1,7 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -10,14 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
+const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     // <motion.div variants={fadeIn("up", index * 0.5, 0.75)}>
     <Tilt
@@ -74,13 +66,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  // const [isLoading, setIsLoading] = useState(false);
   const [projects, isLoading] = Crud();
-  console.log(projects);
-
-  // useEffect(() => {
-  //   projects.
-  // })
 
   return (
     <>

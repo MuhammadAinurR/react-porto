@@ -8,8 +8,6 @@ function Crud() {
   const projectsCollectionRef = collection(db, "projects");
 
   useEffect(() => {
-    // console.log("test");
-
     const getProjectList = async () => {
       setIsLoading(true);
       try {
