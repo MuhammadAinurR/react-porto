@@ -67,7 +67,57 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
 
 const Works = () => {
   const [projects, isLoading] = Crud();
+  const ProjectsList = () => {
+    return (
+      <div className="mt-20 flex flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+    );
+  };
 
+  const SkeleLoads = () => {
+    return (
+      <div className="mt-10">
+        <SkeletonTheme baseColor="#202020" highlightColor="#444">
+          <p>
+            <Tilt
+              options={{
+                max: 45,
+                scale: 1,
+                speed: 450,
+              }}
+              className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+            >
+              <div className="flex flex-wrap h-[400px]">
+                <div className="relative w-full h-[230px]">
+                  <div className="absolute inset-0 flex justify-end m-3 card-img_hover ">
+                    <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+                      <img
+                        src={github}
+                        alt="source code"
+                        className="w-1/2 h-1/2 object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="relative w-full h-[150px] overflow-auto mx-0.5">
+                  <h3 className="text-white font-bold text-[24px]">
+                    {<Skeleton />}
+                  </h3>
+                  <p className="mt-2 text-secondary text-[14px] text-justify ">
+                    {<Skeleton count={4} />}
+                  </p>
+                </div>
+              </div>
+            </Tilt>
+          </p>
+        </SkeletonTheme>
+      </div>
+    );
+  };
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -87,19 +137,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {isLoading ? (
-        <SkeletonTheme baseColor="#202020" highlightColor="#444">
-          <p>
-            <Skeleton count={3} />
-          </p>
-        </SkeletonTheme>
-      ) : (
-        <div className="mt-20 flex flex-wrap gap-7">
-          {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
-          ))}
-        </div>
-      )}
+      {isLoading ? <SkeleLoads /> : <ProjectsList />}
     </>
   );
 };
