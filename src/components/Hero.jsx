@@ -29,7 +29,7 @@ const Hero = () => {
       {!isMobile ? (
         <ComputersCanvas />
       ) : (
-        <div className="text-center text-fuchsia-500 text-[50px] absolute bottom-[350px] w-full flex justify-center">
+        <div className="text-center text-fuchsia-500 text-[50px] absolute bottom-0 w-full flex justify-center">
           Swipe Down
         </div>
       )}
