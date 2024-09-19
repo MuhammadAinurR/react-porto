@@ -16,6 +16,7 @@ import {
     figma,
     docker,
     malangPost,
+    hactiv8,
     umm,
     kominfo,
     bangkit,
@@ -119,6 +120,19 @@ const technologies = [
 ];
 
 const experiences = [
+    {
+        title: "Fullstack JavaScript Immersive Program",
+        company_name: "Hactiv8",
+        icon: hactiv8,
+        iconBg: "#F29222",
+        date: "Jun 2024 - Sep 2024",
+        points: [
+            "Graduated with honor title, achieving an outstanding final score of 98/100.",
+            "Mastered fullstack development with a focus on JavaScript, building end-to-end web applications using Node.js, Express, React, Nextjs, Postgre, and MongoDB.",
+            "Developed hands-on projects demonstrating expertise in front-end and back-end development, API integration, and database management.",
+            "Collaborated with peers to deliver high-quality, scalable applications, receiving recognition for problem-solving skills and technical excellence.",
+        ],
+    },
     {
         title: "Data Analyst",
         company_name: "University of Muhammadiyah Malang",
